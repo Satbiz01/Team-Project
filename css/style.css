@@ -118,3 +118,17 @@
   height: 100px;
   font-size: 40px;
 }
+.main-class-car-rent-catalog img{
+  width: 370px;
+  height: 252px;
+}
+.main-class-car-rent-catalog{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 1200px;
+  flex-wrap: wrap;
+}
+.invisible-car-name{
+  display: none;
+}
