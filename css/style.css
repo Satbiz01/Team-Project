@@ -132,3 +132,15 @@
 .invisible-car-name{
   display: none;
 }
+.lightmode{
+ display: flex;
+ cursor: pointer;
+}
+.darkmode{
+  display: none;
+  cursor: pointer;
+}
+.change-theme{
+  position: absolute;
+  margin-left: 1000px;
+}
