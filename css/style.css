@@ -144,3 +144,119 @@
   position: absolute;
   margin-left: 1000px;
 }
+/* стили для фул скрин картинок*/
+.full-screen-in-img {
+  position: relative;
+  width: 600px;
+  margin: auto;
+}
+
+.full-screen-in-img img:first-child {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.screen-container {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.fullscreen,
+.unfullscreen {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.unfullscreen {
+  display: none;
+}
+/*стили для секции аренды машин*/
+.car-price{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 30px;
+  color: #000;
+}
+.main-class-car-rent-catalog-item{
+  text-align: start;
+}
+.car-input-container{
+  margin-left: 45px;
+}
+.carInput{
+ background-color: lightgrey;
+ height: 40px;
+ border: 0px solid white;
+ margin-top: 50px;
+ border-radius: 6px;
+ color: black;
+ font-size: 20px;
+ border-bottom: 2px solid white;
+ outline: none;
+ text-decoration: underline;
+}
+.selection-filter{
+  border: 2px solid #000;
+  background: #cabbbb;
+  margin-top: 68px;
+  border-radius: 15px;
+  width: 140px;
+  height: 20px;
+}
+/*vouches styles*/
+.slideshow-container{
+  display: flex;
+  justify-content: center;
+}
+.vouch{
+  width: 200px;
+}
+
+.next,
+.old{
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  width: 10px;
+  text-align: center;
+}
+.next{
+  position: absolute;
+  top: 250px;
+  right: 668px;
+}
+.old{
+  position: absolute;
+  top: 250px;
+  left: 668px;
+}
+.arrow-container{
+  display: flex;
+  justify-content: center;
+}
+.counter{
+  position: absolute;
+  bottom: 280px;
+  color: white;
+  margin-left: 10px;
+  text-decoration: underline 3px red;
+}
+.black-container-opacity{
+  width: 200px;
+  height: 70px;
+  bottom: 250px;
+  opacity: 50%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  position: absolute;
+  background-color: #000;
+}

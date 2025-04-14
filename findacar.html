@@ -11,39 +11,46 @@
 <body>
   <div class="container">
     <main>
-      <form action="">
-        <input class="carInput" type="text" placeholder="Enter a car">
-        <input type="button" value="Sumbit">
-      </form>
-      <select name="" id="">
-        <option value="" selected>by default</option>
-        <option value="">from hight to low</option>
-        <option value="">from low to high</option>
-      </select>
+      <div class="car-input-container">
+        <form action="">
+          <input class="carInput" type="text" placeholder="Enter a car">
+        </form>
+        <select class="selection-filter">
+          <option value="">Сортировка</option>
+          <option value="low">От дешевых к дорогим</option>
+          <option value="high">От дорогих к дешевым</option>
+        </select>
+      </div>
       <ul class="main-class-car-rent-catalog">
-        <li>
-          <img src="./images/mersb.png" alt="mers-benz">
+        <li class="carr main-class-car-rent-catalog-item">
+          <img data-price="100" src="./images/mersb.png" alt="mers-benz">
           <p class="invisible-car-name">mers-benz</p>
+          <p class="car-price">100$ per/day</p>
         </li>
-        <li>
-          <img src="./images/audi.png" alt="">
+        <li class="carr main-class-car-rent-catalog-item">
+          <img data-price="120" src="./images/audi.png" alt="">
           <p class="invisible-car-name">audi</p>
+          <p class="car-price">120$ per/day</p>
         </li>
-        <li>
-          <a href=""><img src="./images/bmw.png" alt=""></a>
+        <li class="carr main-class-car-rent-catalog-item">
+          <a href=""><img data-price="110" src="./images/bmw.png" alt=""></a>
           <p class="invisible-car-name">BMW</p>
+          <p class="car-price">110$ per/day</p>
         </li>
-        <li>
-          <img src="./images/mazda.png" alt="">
+        <li class="carr main-class-car-rent-catalog-item">
+          <img data-price="100" src="./images/mazda.png" alt="">
           <p class="invisible-car-name">mazda</p>
+          <p class="car-price">100$ per/day</p>
         </li>
-        <li>
-          <img src="./images/wol.png" alt="">
+        <li class="carr main-class-car-rent-catalog-item">
+          <img data-price="75" src="./images/wol.png" alt="">
           <p class="invisible-car-name">volkswagen</p>
+          <p class="car-price">75$ per/day</p>
         </li>
-        <li>
-          <img src="./images/mesrc.png" alt="">
+        <li class="carr main-class-car-rent-catalog-item">
+          <img data-price="175" src="./images/mesrc.png" alt="">
           <p class="invisible-car-name">mers c class</p>
+          <p class="car-price">175$ per/day</p>
         </li>
       </ul>
     </main>
