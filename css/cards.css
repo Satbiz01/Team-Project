@@ -6,7 +6,6 @@
     background-color: #CDCCCC;
     padding: 20px;
 }
-
 .card {
     width: 350px;
     background: white;
@@ -15,6 +14,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     margin-top: 10px;
+}
+.cards-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
 }
 
 .card img {
