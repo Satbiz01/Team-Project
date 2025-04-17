@@ -6,7 +6,6 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-  <script type="module" src="./index.js"></script>
 </head>
 <body>
   <div class="container">
@@ -16,9 +15,9 @@
           <input class="carInput" type="text" placeholder="Enter a car">
         </form>
         <select class="selection-filter">
-          <option value="">Сортировка</option>
-          <option value="low">От дешевых к дорогим</option>
-          <option value="high">От дорогих к дешевым</option>
+          <option value="default">Default</option>
+          <option value="low">From cheap to expensive</option>
+          <option value="high">From expensive to cheap</option>
         </select>
       </div>
       <ul class="main-class-car-rent-catalog">
@@ -55,5 +54,7 @@
       </ul>
     </main>
   </div>
+  <button class="top-button">↑</button>
+  <script src="./index.js"></script>
 </body>
 </html>
