@@ -113,3 +113,13 @@ if(topBTN){
 document.querySelector('.back-arrow').addEventListener('click', function() {
   window.location.href = 'index.html';
 })
+document.addEventListener("DOMContentLoaded", () => {
+  let rentButton = document.querySelector(".button")
+
+  rentButton.addEventListener("click", () => {
+    window.location.href = "findacar.html"
+  })
+})
+document.getElementById("rentBtn").addEventListener("click", function() {
+  alert("Thank you for your order! We will contact you soon.")
+})

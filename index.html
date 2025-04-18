@@ -99,5 +99,19 @@
   </footer>
   <button class="top-button">↑</button>
   <script src="./index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const orderButtons = document.querySelectorAll(".order-btn")
+  
+      orderButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          window.location.href = "order-form.html"
+        })
+      })
+    })
+    document.querySelector('.view-more-btn').addEventListener('click', function() {
+  window.location.href = 'findacar.html'
+})
+  </script>
 </body>
 </html>
