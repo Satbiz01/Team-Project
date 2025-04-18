@@ -25,3 +25,6 @@ if(lightmode && darkmode){
     darkmode.style.display = 'none'
   })
 }
+document.querySelector('.back-arrow').addEventListener('click', function() {
+  window.location.href = 'index.html';
+})
