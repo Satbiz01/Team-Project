@@ -110,3 +110,6 @@ if(topBTN){
     window.scrollTo({ top: 0});
   });
 }
+document.querySelector('.back-arrow').addEventListener('click', function() {
+  window.location.href = 'index.html';
+})
