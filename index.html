@@ -17,9 +17,9 @@
       <div class="header-black-theme">
         <a class="logo" href="./index.html"><img  src="./images/logo.png" alt=""></a>
         <ul class="header-list">
-          <li class="header-list-item"><a class="header-btn-link" href="./findacar.html">Our park</a></li>
-          <li class="header-list-item"><a class="header-btn-link" href="">Rental conditions</a></li>
-          <li class="header-list-item"><a class="header-btn-link" href="./vouches.html">All reviews</a></li>
+          <li class="header-list-item"><a class="header-btn-link" href="">Our park</a></li>
+          <li class="header-list-item"><a class="header-btn-link" href="rental-cond.html">Rental conditions</a></li>
+          <li class="header-list-item"><a class="header-btn-link" href="">All reviews</a></li>
           <li class="header-list-item"><a class="header-btn-link" href="">Contacts</a></li>
         </ul>
         <div class="change-theme">
@@ -51,38 +51,35 @@
       </section>
     </div>
   </main>
-  <div class="container">
-    <div class="cars">
-      <div class="card">
-
-        <img src="https://cdn3.riastatic.com/photosnew/auto/photo/audi_rs6__567212403fx.jpg" class="Audi RS6 2024">
-        <h2>Audi RS6 2024</h2>
-        <p><strong>Engine:</strong> 4 l Hybrid (MHEV)</p>
-        <p><strong>Color:</strong> Grey</p>
-        <p><strong>Price:</strong> 200$ per/day</p>
-        <button class="order-btn">Order</button>
-      </div>
-
-      <div class="card">
-          <img src="./images/tesla_model-x__522916236f.jpg" class="Tesla Model X 2022">
-          <h2>Tesla Model X 2022</h2>
-          <p><strong>Engine:</strong> Dual Electric Motors (AWD)</p>
-          <p><strong>Color:</strong> White</p>
-          <p><strong>Price:</strong> 150$ per/day</p>
-          <button class="order-btn">Order</button>
-      </div>
-
-      <div class="card">
-          <img src="./images/bmw_x6__590991260f.webp" class="BMW X6 2024">
-          <h2>BMW X6 2024</h2>
-          <p><strong>Engine:</strong> 3.0L Turbo I6 (MHEV)</p>
-          <p><strong>Color:</strong> Black</p>
-          <p><strong>Price:</strong> 200$ per/day</p>
-          <button class="order-btn">Order</button>
-      </div>
-
-      <button class="view-more-btn">View more items</button>
-  </div>
+  <div class="cars">
+    <div class="cards-container">
+  <div class="card">
+    <img src="https://cdn3.riastatic.com/photosnew/auto/photo/audi_rs6__567212403fx.jpg" class="Audi RS6 2024">
+    <h2>Audi RS6 2024</h2>
+    <p><strong>Engine:</strong> 4 l Hybrid (MHEV)</p>
+    <p><strong>Color:</strong> Grey</p>
+    <p><strong>Price:</strong> 200$ per/day</p>
+    <button class="order-btn">Order</button>
+</div>
+<div class="card">
+    <img src="./images/tesla_model-x__522916236f.jpg" class="Tesla Model X 2022">
+    <h2>Tesla Model X 2022</h2>
+    <p><strong>Engine:</strong> Dual Electric Motors (AWD)</p>
+    <p><strong>Color:</strong> White</p>
+    <p><strong>Price:</strong> 150$ per/day</p>
+    <button class="order-btn">Order</button>
+</div>
+<div class="card">
+    <img src="./images/bmw_x6__590991260f.webp" class="BMW X6 2024">
+    <h2>BMW X6 2024</h2>
+    <p><strong>Engine:</strong> 3.0L Turbo I6 (MHEV)</p>
+    <p><strong>Color:</strong> Black</p>
+    <p><strong>Price:</strong> 200$ per/day</p>
+    <button class="order-btn">Order</button>
+</div>
+    </div>
+<button class="view-more-btn">View more items</button>
+  <script defer src="index.js"></script>
 </div>
 <div class="container">
   <footer>
@@ -104,5 +101,19 @@
 </div>
   <button class="top-button">↑</button>
   <script src="./index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const orderButtons = document.querySelectorAll(".order-btn")
+  
+      orderButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          window.location.href = "order-form.html"
+        })
+      })
+    })
+    document.querySelector('.view-more-btn').addEventListener('click', function() {
+  window.location.href = 'findacar.html'
+})
+  </script>
 </body>
 </html>

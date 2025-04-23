@@ -110,7 +110,6 @@ if(topBTN){
     window.scrollTo({ top: 0});
   });
 }
-
 let prevIMG = document.querySelector('.prev-img')
 let nextIMG = document.querySelector('.next-img')
 let indexIMG = 0;
@@ -129,7 +128,6 @@ function showSlidea() {
   slidesIMG[indexIMG].style.display = "block";
 }
 
-
 showSlidea();
 
 if (nextIMG) {
@@ -145,3 +143,19 @@ if (prevIMG) {
     showSlidea();
   });
 }
+
+document.querySelector('.back-arrow').addEventListener('click', function() {
+  window.location.href = 'index.html';
+})
+
+document.addEventListener("DOMContentLoaded", () => {
+  let rentButton = document.querySelector(".button")
+
+  rentButton.addEventListener("click", () => {
+    window.location.href = "findacar.html"
+  })
+})
+
+document.getElementById("rentBtn").addEventListener("click", function() {
+  alert("Thank you for your order! We will contact you soon.")
+})
