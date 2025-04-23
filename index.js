@@ -110,9 +110,44 @@ if(topBTN){
     window.scrollTo({ top: 0});
   });
 }
+let prevIMG = document.querySelector('.prev-img')
+let nextIMG = document.querySelector('.next-img')
+let indexIMG = 0;
+let slidesIMG = document.querySelectorAll('.mers-slide');
+
+function showSlidea() {
+  if (slidesIMG.length === 0) return;
+
+  slidesIMG.forEach((slide) => {
+    slide.style.display = "none";
+  });
+
+  if (indexIMG >= slidesIMG.length) indexIMG = 0;
+  if (indexIMG < 0) indexIMG = slidesIMG.length - 1;
+
+  slidesIMG[indexIMG].style.display = "block";
+}
+
+showSlidea();
+
+if (nextIMG) {
+  nextIMG.addEventListener('click', () => {
+    indexIMG++;
+    showSlidea();
+  });
+}
+
+if (prevIMG) {
+  prevIMG.addEventListener('click', () => {
+    indexIMG--;
+    showSlidea();
+  });
+}
+
 document.querySelector('.back-arrow').addEventListener('click', function() {
   window.location.href = 'index.html';
 })
+
 document.addEventListener("DOMContentLoaded", () => {
   let rentButton = document.querySelector(".button")
 
@@ -120,6 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "findacar.html"
   })
 })
+
 document.getElementById("rentBtn").addEventListener("click", function() {
   alert("Thank you for your order! We will contact you soon.")
 })

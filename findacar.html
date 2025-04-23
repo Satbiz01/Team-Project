@@ -3,13 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CaRent</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <header>
+    <div class="container">
+      <div class="header-black-theme">
+        <a class="logo" href="./index.html"><img  src="./images/logo.png" alt=""></a>
+        <ul class="header-list">
+          <li class="header-list-item"><a class="header-btn-link" href="./findacar.html">Our park</a></li>
+          <li class="header-list-item"><a class="header-btn-link" href="">Rental conditions</a></li>
+          <li class="header-list-item"><a class="header-btn-link" href="./vouches.html">All reviews</a></li>
+          <li class="header-list-item"><a class="header-btn-link" href="">Contacts</a></li>
+        </ul>
+        <div class="change-theme">
+          <img class="lightmode" src="./images/lightmode.svg" alt="">
+          <img class="darkmode" src="./images/darkmode.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
   <div class="container">
     <main>
+      <div>
       <div class="car-input-container">
         <form action="">
           <input class="carInput" type="text" placeholder="Enter a car">
@@ -22,34 +40,46 @@
       </div>
       <ul class="main-class-car-rent-catalog">
         <li class="carr main-class-car-rent-catalog-item">
-          <img data-price="100" src="./images/mersb.png" alt="mers-benz">
-          <p class="invisible-car-name">mers-benz</p>
-          <p class="car-price">100$ per/day</p>
+          <a href="./car-info-mclaren.html">
+            <img data-price="100" src="./car-info-mclaren/1.webp" alt="mers-benz">
+            <p class="invisible-car-name">McLaren</p>
+            <p class="car-price">400$ per/day</p>
+          </a>
         </li>
         <li class="carr main-class-car-rent-catalog-item">
-          <img data-price="120" src="./images/audi.png" alt="">
-          <p class="invisible-car-name">audi</p>
-          <p class="car-price">120$ per/day</p>
+          <a href="./car-info-audi.html">
+            <img data-price="120" src="./images/audi-e-tron.webp" alt="">
+            <p class="invisible-car-name">audi</p>
+            <p class="car-price">120$ per/day</p>
+          </a>
         </li>
         <li class="carr main-class-car-rent-catalog-item">
-          <a href=""><img data-price="110" src="./images/bmw.png" alt=""></a>
-          <p class="invisible-car-name">BMW</p>
-          <p class="car-price">110$ per/day</p>
+          <a href="./car-info-bmw.html">
+            <img data-price="110" src="./images/bmw.png" alt="">
+            <p class="invisible-car-name">BMW</p>
+            <p class="car-price">110$ per/day</p>
+          </a>
         </li>
         <li class="carr main-class-car-rent-catalog-item">
-          <img data-price="100" src="./images/mazda.png" alt="">
-          <p class="invisible-car-name">mazda</p>
-          <p class="car-price">100$ per/day</p>
+          <a href="./car-info-mazda.html">
+            <img data-price="100" src="./images/mazda.png" alt="">
+            <p class="invisible-car-name">mazda</p>
+            <p class="car-price">100$ per/day</p>
+          </a>
         </li>
         <li class="carr main-class-car-rent-catalog-item">
-          <img data-price="75" src="./images/wol.png" alt="">
+          <a href="./car-info-swaga.html  ">
+          <img data-price="75" src="./images/swaga.webp" alt="">
           <p class="invisible-car-name">volkswagen</p>
           <p class="car-price">75$ per/day</p>
+          </a>
         </li>
         <li class="carr main-class-car-rent-catalog-item">
-          <img data-price="175" src="./images/mesrc.png" alt="">
+          <a href="./car-info-mers.html">
+          <img data-price="175" src="./car-info-img/2.webp" alt="">
           <p class="invisible-car-name">mers c class</p>
           <p class="car-price">175$ per/day</p>
+          </a>
         </li>
       </ul>
     </main>
