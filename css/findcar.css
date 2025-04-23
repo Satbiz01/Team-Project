@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.container {
+.container2 {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
@@ -13,6 +13,7 @@ body {
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
+  margin-left: 9%;
 }
 
 .input-wrapper {
@@ -79,13 +80,6 @@ body {
     height: auto;
     border-radius: 8px;
   }
-  
-  .car-price {
-    font-size: 20px;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
   .invisible-car-name {
     display: none;
   }
@@ -102,25 +96,83 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
-  .back-arrow {
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: #000;
-    color: white;
-    border-radius: 10px;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    transition: 0.4s ease;
+  .car-price{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #2b2d42;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-decoration: none;
   }
-  .back-arrow:hover {
-    background: #000000;
-    box-shadow: 7px 5px 56px -14px #000000;
-    transform: scale(1.05);
+  .main-class-car-rent-catalog-item{
+    text-align: start;
+    list-style: none;
+  }
+  .main-class-car-rent-catalog{
+    margin: 0px;
+    padding: 0px;
+    gap: 40px;
+    width: 1200px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+    outline: 2px solid black;
+    margin: 0 auto;
+  }
+  .header-list {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
   }
   
-  .back-arrow:active {
-    transform: scale(0.97);
-    box-shadow: 7px 5px 56px -10px #000000;
+  .header-black-theme {
+    height: 75px;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .logo {
+    position: absolute;
+    margin-right: 1300px;
+    display: flex;
+    width: 90px;
+    height: 40px;
+  }
+  
+  .header-btn-link {
+    border-radius: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .header-btn-link:hover {
+    text-decoration: underline 5px;
+    border-radius: 20px;
+    text-underline-offset: 10px;
+  }
+  .lightmode {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .darkmode {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .change-theme {
+    position: absolute;
+    right: 20px;
   }
