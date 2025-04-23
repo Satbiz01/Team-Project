@@ -147,6 +147,7 @@ html, body {
   height: auto;
 }
 
+
 .main-class-car-rent-catalog {
   display: flex;
   justify-content: center;
@@ -155,9 +156,7 @@ html, body {
   flex-wrap: wrap;
 }
 
-.invisible-car-name {
-  display: none;
-}
+
 
 .lightmode {
   display: flex;
@@ -204,6 +203,51 @@ html, body {
 .unfullscreen {
   display: none;
 }
+/*стили для секции аренды машин*/
+.car-price{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 30px;
+  color: #000;
+}
+.main-class-car-rent-catalog-item{
+  text-align: start;
+  
+}
+.main-class-car-rent-catalog{
+  margin: 0px;
+  padding: 0px;
+  gap: 40px;
+  width: 1200px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.car-input-container{
+  margin-left: 45px;
+}
+.carInput{
+ background-color: lightgrey;
+ height: 40px;
+ border: 0px solid white;
+ margin-top: 50px;
+ border-radius: 6px;
+ color: black;
+ font-size: 20px;
+ border-bottom: 2px solid white;
+ outline: none;
+ text-decoration: underline;
+}
+.selection-filter{
+  border: 2px solid #000;
+  background: #cabbbb;
+  margin-top: 68px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  width: 140px;
+  height: 20px;
+}
 /*vouches styles*/
 .slideshow-container{
   display: flex;
@@ -240,6 +284,7 @@ html, body {
   display: flex;
   justify-content: center;
 }
+
 .counter{
   position: absolute;
   bottom: 220px;
@@ -273,4 +318,96 @@ html, body {
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: opacity 0.3s ease;
+}
+/* car info styles*/
+.car-info-descr{
+  border: 2px solid #000;
+  border-radius: 20px;
+  margin-top: 98px;
+  margin-left: 30px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+}
+.car-info-descr p{
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: var(--font-family);
+  font-weight: 20;
+  font-size: 20px;
+  text-align: start;
+  line-height: 30px;
+  color: #000;
+}
+.car-info-descr-oredr-btn{
+  border-radius: 9px;
+  width: 120px;
+  height: 40px;
+  border: 0px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+.car-info-container{
+  display: flex;
+  justify-content: center;
+  
+}
+.car-info-img h1{
+ margin-top: 20px;
+ margin-bottom: 40px;
+}
+.car-info-descr-oredr-btn:hover{
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+.car-info-sec{
+  background-color: #CDCCCC;
+
+}
+.mers-st{
+ width: 589px;
+ height: 442px;
+}
+.car-info-img{
+  flex-direction: column;
+  display: flex;
+}
+.mers-cont{
+  display: flex;
+  padding-top: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+.mers-st:hover{
+  text-decoration: underline 2px black;
+}
+.prev-img{
+  position: absolute;
+  top: 370px;
+  left: 392px;
+}
+.next-img{
+  position: absolute;
+  top: 370px;
+  right: 725px; 
+}
+.next-img,
+.prev-img{
+  padding: 16px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  width: 10 px;
+  text-align: center;
 }
