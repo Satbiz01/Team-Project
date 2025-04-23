@@ -74,7 +74,17 @@
     position: fixed;
     top: 20px;
     left: 20px;
+    transition: 0.4s ease;
+  }
+  .back-arrow:hover {
+    background: #000000;
+    box-shadow: 7px 5px 56px -14px #000000;
+    transform: scale(1.05);
+  }
   
+  .back-arrow:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #000000;
   }
   .order {
     background: #E1E1E1;
