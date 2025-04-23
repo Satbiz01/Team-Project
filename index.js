@@ -110,3 +110,38 @@ if(topBTN){
     window.scrollTo({ top: 0});
   });
 }
+
+let prevIMG = document.querySelector('.prev-img')
+let nextIMG = document.querySelector('.next-img')
+let indexIMG = 0;
+let slidesIMG = document.querySelectorAll('.mers-slide');
+
+function showSlidea() {
+  if (slidesIMG.length === 0) return;
+
+  slidesIMG.forEach((slide) => {
+    slide.style.display = "none";
+  });
+
+  if (indexIMG >= slidesIMG.length) indexIMG = 0;
+  if (indexIMG < 0) indexIMG = slidesIMG.length - 1;
+
+  slidesIMG[indexIMG].style.display = "block";
+}
+
+
+showSlidea();
+
+if (nextIMG) {
+  nextIMG.addEventListener('click', () => {
+    indexIMG++;
+    showSlidea();
+  });
+}
+
+if (prevIMG) {
+  prevIMG.addEventListener('click', () => {
+    indexIMG--;
+    showSlidea();
+  });
+}
