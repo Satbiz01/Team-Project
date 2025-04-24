@@ -159,3 +159,25 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("rentBtn").addEventListener("click", function() {
   alert("Thank you for your order! We will contact you soon.")
 })
+let burgerIcon = document.getElementById('burgerIcon')
+let menu = document.getElementById('menu')
+let menuOpen = false
+
+burgerIcon.addEventListener('click', (e) => {
+    e.preventDefault()
+    menuOpen = !menuOpen
+    menu.classList.toggle('show', menuOpen)
+    burgerIcon.classList.toggle('active', menuOpen)
+})
+document.getElementById("goHome").addEventListener("click", () => {
+  window.location.href = "index.html"
+})
+document.getElementById("goPark").addEventListener("click", () => {
+  window.location.href = "findacar.html"
+})
+document.getElementById("goRent").addEventListener("click", () => {
+  window.location.href = "rental-cond.html"
+})
+document.getElementById("goReviews").addEventListener("click", () => {
+  window.location.href = "vouches.html"
+})
