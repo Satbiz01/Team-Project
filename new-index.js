@@ -1,12 +1,16 @@
-let burgerIcon = document.getElementById('burgerIcon');
-let menu = document.getElementById('menu');
-let menuOpen = false;
+let burgerIcon = document.getElementById('burgerIcon')
+let menu = document.getElementById('menu')
 
 burgerIcon.addEventListener('click', (e) => {
   e.preventDefault()
-  menuOpen = !menuOpen
-  menu.classList.toggle('show', menuOpen)
-  burgerIcon.classList.toggle('active', menuOpen)
+
+  if (menu.classList.contains('show')) {
+    menu.classList.remove('show')
+    burgerIcon.classList.remove('active')
+  } else {
+    menu.classList.add('show')
+    burgerIcon.classList.add('active')
+  }
 })
 
 document.getElementById("goHome").addEventListener("click", () => {
