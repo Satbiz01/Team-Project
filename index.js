@@ -3,6 +3,8 @@ let darkmode = document.querySelector('.darkmode');
 let lightmode = document.querySelector('.lightmode');
 let fullscreen = document.querySelector('.fullscreen')
 let unfullscreen = document.querySelector('.unfullscreen')
+let burgerIcon = document.getElementById('burgerIcon')
+let menu = document.getElementById('menu')
 if (input) {
   input.addEventListener('input', () => {
     let filter = input.value.toLowerCase().trim();
@@ -159,15 +161,17 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("rentBtn").addEventListener("click", function() {
   alert("Thank you for your order! We will contact you soon.")
 })
-let burgerIcon = document.getElementById('burgerIcon')
-let menu = document.getElementById('menu')
-let menuOpen = false
 
 burgerIcon.addEventListener('click', (e) => {
-    e.preventDefault()
-    menuOpen = !menuOpen
-    menu.classList.toggle('show', menuOpen)
-    burgerIcon.classList.toggle('active', menuOpen)
+  e.preventDefault()
+
+  if (menu.classList.contains('show')) {
+    menu.classList.remove('show')
+    burgerIcon.classList.remove('active')
+  } else {
+    menu.classList.add('show')
+    burgerIcon.classList.add('active')
+  }
 })
 document.getElementById("goHome").addEventListener("click", () => {
   window.location.href = "index.html"
