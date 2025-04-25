@@ -379,3 +379,9 @@ html {
   width: 10 px;
   text-align: center;
 }
+.main-class-car-rent-catalog-item a{
+   text-decoration: none;
+}
+.main-class-car-rent-catalog-item img{
+  border-radius: 10px;
+}
