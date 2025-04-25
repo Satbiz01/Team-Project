@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CaRent</title>
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/findcar.css">
 </head>
 <body>
   <header>
@@ -14,7 +15,11 @@
         <a class="logo" href="./index.html"><img  src="./images/logo.png" alt=""></a>
         <ul class="header-list">
           <li class="header-list-item"><a class="header-btn-link" href="./findacar.html">Our park</a></li>
+<<<<<<< HEAD
           <li class="header-list-item"><a class="header-btn-link" href="./rental-cond.html">Rental conditions</a></li>
+=======
+          <li class="header-list-item"><a class="header-btn-link" href="rental-cond.html">Rental conditions</a></li>
+>>>>>>> 328c70ca44eb2925a2e4f9f3473d7ce1d31b5f01
           <li class="header-list-item"><a class="header-btn-link" href="./vouches.html">All reviews</a></li>
           <li class="header-list-item"><a class="header-btn-link" href="">Contacts</a></li>
         </ul>
@@ -25,12 +30,20 @@
       </div>
     </div>
   </header>
-  <div class="container">
+  <div class="container2">
     <main>
-      <div>
       <div class="car-input-container">
         <form action="">
-          <input class="carInput" type="text" placeholder="Enter a car">
+          <div class="input-wrapper">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="20" fill="#aaa">
+              <path d="M0 0h24v24H0V0z" fill="none"/>
+              <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5
+              6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5
+              4.99L20.49 19l-4.99-5zm-6 0C8.01 14 6 11.99 6 9.5S8.01 5
+              10.5 5 15 7.01 15 9.5 12.99 14 10.5 14z"/>
+            </svg>
+            <input class="carInput" type="text" placeholder="Enter a car">
+          </div>
         </form>
         <select class="selection-filter">
           <option value="default">Default</option>
