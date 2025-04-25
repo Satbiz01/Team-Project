@@ -98,8 +98,8 @@
     position:fixed;
     top: 50px;
     right: 530px;
-    border: 2px solid;
-
+    border: 2px #E1E1E1;
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
   }
   .name-order {
   font-size: 40px;
